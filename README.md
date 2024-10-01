@@ -14,7 +14,7 @@ Este projeto tem como objetivo realizar o download, processamento e análise de 
 - **Python 3.8+**
 - Pacotes especificados no arquivo `requirements.txt`
 - Credenciais configuradas para o **Amazon S3** e **Amazon Athena**
-- Arquivo `kaggle.json` para autenticação na API do Kaggle na raíz do projeto
+- Arquivo `kaggle.json` para autenticação na API do Kaggle deve estar dentro da pasta **scripts** do projeto
 
 ### Instalação
 
