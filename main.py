@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from scripts.download import baixar_e_extrair_dataset_kaggle
-from scripts.process_up import processa_b3_arquivo
+from scripts.process_up import processa_arquivo
 from scripts.athena_up import execute_athena_query, check_query_execution, get_query_results
 
 # Nome do dataset no Kaggle que você quer baixar
@@ -48,7 +48,7 @@ def main():
     c_bucket = 'bucketml-cbd0711c-1d5c-4227-bfef-e2c9e8c55bdc'
 
     # Processar o arquivo e salvar no S3
-    resultado = processa_b3_arquivo(c_arquivo, c_bucket)
+    resultado = processa_arquivo(c_arquivo, c_bucket)
     print(f"Resultado do processamento: {resultado}")
 
     # Executar a consulta
