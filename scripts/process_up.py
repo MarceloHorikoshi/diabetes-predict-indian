@@ -6,7 +6,7 @@ import os
 import re
 
 
-def processa_b3_arquivo(c_arquivo, c_bucket) -> str:
+def processa_arquivo(c_arquivo, c_bucket) -> str:
     """
         Processa um arquivo CSV da B3, converte para formato Parquet e faz o upload para o Amazon S3.
 
